@@ -1,18 +1,12 @@
-{% extends 'bootstrap/base.html' %}
 {% import "bootstrap/wtf.html" as wtf %}
 
-{% block title %}
-rm -rf
-{% endblock %}
-
-
-{% block content %}
-
+<head>
+    <title>rm -rf</title>
+    <link rel="stylesheet" type="text/css" href="/static/main.css" />
+</head>
 <div class="container">
   <div class="row">
       {{ wtf.quick_form(form) }}
     </div>
   </div>
 </div>
-
-{% endblock %}
