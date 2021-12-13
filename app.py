@@ -6,7 +6,7 @@ from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import DataRequired
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = open('key').read()
+app.config['SECRET_KEY'] = 'AE5963C9BECD7B8514FAD7996C39E'
 
 passphrase_of_today = ''.join(
     random.SystemRandom().choices(string.ascii_uppercase+string.ascii_lowercase+string.digits, k=8)
