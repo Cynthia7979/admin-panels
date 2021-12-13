@@ -1,5 +1,3 @@
-{% import "bootstrap/wtf.html" as wtf %}
-
 <head>
     <title>rm -rf</title>
     <link rel="stylesheet" type="text/css" href="/static/main.css" />
@@ -10,7 +8,13 @@
             Log In to rm -rf Admin Panel
         </h1>
         <div class="login-form">
-        {{ wtf.quick_form(form) }}
+            <form method="POST" action="/">
+                {{ form.user_name.label }} {{ form.user_name() }}
+                <br>
+                {{ form.password.label }} {{ form.password() }}
+                <br>
+                <input type="submit" value="<Log In>">
+            </form>
         </div>
         <div class="message">
             {{ msg }}
