@@ -2,7 +2,9 @@ body {
     background-color: black;
     color: chartreuse;
     font-family: "ＭＳ Ｐゴシック";
-    padding: 50px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 40px;
     -webkit-font-smoothing: none;
 }
 
@@ -18,6 +20,14 @@ h1, p {
 
 .left {
     text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.no-scroll {
+    overflow: hidden;
 }
 
 .content {

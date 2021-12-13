@@ -1,0 +1,44 @@
+td {
+    padding: 5px;
+}
+
+td.right {
+    padding-right: 10px;
+    border-right: solid 1px;
+}
+
+td:not(right) {
+    padding-left: 10px;
+}
+
+.three-column {
+    float: left;
+    width: 18%;
+    padding: 0 7.665%;
+}
+
+.news-block {
+    border-bottom-color: chartreuse;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    display: block;
+    text-align: left;
+    padding: 15px 0px;
+}
+
+.news-block h1 {
+    font-weight: bold;
+    font-size: unset;
+}
+
+.news-block .smaller {
+    font-size: smaller;
+    margin-bottom: 0.5em;
+}
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
