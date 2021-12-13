@@ -5,8 +5,15 @@
     <link rel="stylesheet" type="text/css" href="/static/main.css" />
 </head>
 <body>
-    {{ wtf.quick_form(form) }}
-    <div class="message">
-        {{ msg }}
+    <div class="content">
+        <h1>
+            Log In to rm -rf Admin Panel
+        </h1>
+        <div class="login-form">
+        {{ wtf.quick_form(form) }}
+        </div>
+        <div class="message">
+            {{ msg }}
+        </div>
     </div>
 </body>

@@ -19,7 +19,7 @@ Bootstrap(app)
 class LoginForm(FlaskForm):
     user_name = StringField('Username', validators=[DataRequired()])
     password = PasswordField('Password', validators=[DataRequired()])
-    submit = SubmitField('Log In')
+    submit = SubmitField('<Log In>')
 
 
 @app.route('/', methods=['GET', 'POST'])
