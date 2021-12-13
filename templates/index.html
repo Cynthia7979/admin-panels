@@ -4,9 +4,9 @@
     <title>rm -rf</title>
     <link rel="stylesheet" type="text/css" href="/static/main.css" />
 </head>
-<div class="container">
-  <div class="row">
-      {{ wtf.quick_form(form) }}
+<body>
+    {{ wtf.quick_form(form) }}
+    <div class="message">
+        {{ msg }}
     </div>
-  </div>
-</div>
+</body>
