@@ -52,7 +52,7 @@ def database(passphrase=''):
     if passphrase != passphrase_of_today:
         abort(401)
     else:
-        return render_template('database.html')
+        return render_template('database.html', passphrase=passphrase)
 
 
 @app.errorhandler(404)
