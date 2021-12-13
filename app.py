@@ -43,7 +43,7 @@ def admin_home(passphrase=''):
     if passphrase != passphrase_of_today:
         abort(401)
     else:
-        return render_template('admin_home.html')
+        return render_template('admin_home.html', passphrase=passphrase)
 
 
 @app.route('/database/?<passphrase>')
